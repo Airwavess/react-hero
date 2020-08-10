@@ -1,5 +1,10 @@
 # React Hero
 
+## Demo
+
+* [React Hero online demo](https://airwavess.github.io/react-hero/)
+* [Storybook](https://react-hero.vercel.app/?path=/story/herocard--default)
+
 ## Quick Start
 
 在本地端執行專案：
