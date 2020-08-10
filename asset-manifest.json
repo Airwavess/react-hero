@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-hero/static/css/main.6e7a96eb.chunk.css",
+    "main.js": "/react-hero/static/js/main.1cc02129.chunk.js",
+    "main.js.map": "/react-hero/static/js/main.1cc02129.chunk.js.map",
+    "runtime-main.js": "/react-hero/static/js/runtime-main.7b798acc.js",
+    "runtime-main.js.map": "/react-hero/static/js/runtime-main.7b798acc.js.map",
+    "static/js/2.6208149e.chunk.js": "/react-hero/static/js/2.6208149e.chunk.js",
+    "static/js/2.6208149e.chunk.js.map": "/react-hero/static/js/2.6208149e.chunk.js.map",
+    "index.html": "/react-hero/index.html",
+    "precache-manifest.52d38f903f9f06182f936213c9f1fc4c.js": "/react-hero/precache-manifest.52d38f903f9f06182f936213c9f1fc4c.js",
+    "service-worker.js": "/react-hero/service-worker.js",
+    "static/css/main.6e7a96eb.chunk.css.map": "/react-hero/static/css/main.6e7a96eb.chunk.css.map",
+    "static/js/2.6208149e.chunk.js.LICENSE.txt": "/react-hero/static/js/2.6208149e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b798acc.js",
+    "static/js/2.6208149e.chunk.js",
+    "static/css/main.6e7a96eb.chunk.css",
+    "static/js/main.1cc02129.chunk.js"
+  ]
+}
