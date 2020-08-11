@@ -2,8 +2,8 @@
 
 ## Demo
 
-* [React Hero online demo](https://airwavess.github.io/react-hero/)
-* [Storybook](https://react-hero.vercel.app/?path=/story/herocard--default)
+- [Online demo](https://airwavess.github.io/react-hero/)
+- [Storybook](https://react-hero.vercel.app/?path=/story/herocard--default)
 
 ## Quick Start
 

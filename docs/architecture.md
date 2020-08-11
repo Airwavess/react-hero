@@ -17,7 +17,7 @@
 
 **專案中的頁面**
 
-雖然在專案需求中說明需要兩個頁面，但是由於「點擊連結但不能重複渲染 HeroList」這個關鍵需求，所以 HeroList 以條件式選染的方式成為 HeroPage 的一部分。
+雖然在專案需求中說明需要兩個頁面，但是由於「點擊連結但不能重複渲染 HeroList」這個關鍵需求，所以 Page 只會有一個 HeroPage。在 HeroPage 中包含了 HeroList 與 HeroProfile 兩個 component，HeroProfile 則是以判斷 URL 是否有 hero id，並且以條件式渲染的方式處理 HeroProfile。
 
 ## Components
 
@@ -47,8 +47,8 @@
 
 在這個專案中使用 redux 作為管理狀態的系統，並將相關的檔案放置 `src/redux` 中。此外，為了能夠**區別各種屬於不同類別的狀態**，在 `src/redux` 中會將會以狀態類別建立新的資料夾，每一個資料夾中皆包含以下幾個檔案:
 
-- `action.ts`: redux 的 action 定義。
-- `reducer.ts`: redux 的 reducer 定義。
+- `action.ts`: 定義 redux 的 action。
+- `reducer.ts`: 定義 redux 的 reducer。
 - `types.ts`: 定義 reducer 的 state type，以及定義 action 的 type。
 - `saga.ts`: 定義 saga function。
 
