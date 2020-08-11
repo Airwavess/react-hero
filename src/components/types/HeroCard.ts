@@ -1,6 +1,5 @@
-import { Hero } from '../../redux/heroes/types';
+import { Hero } from "../../redux/heroes/types";
 
-export interface HeroCardProps {
-  hero: Hero;
+export interface HeroCardProps extends Hero {
   handleFetchHeroProfile: (heroId: string) => void;
 }

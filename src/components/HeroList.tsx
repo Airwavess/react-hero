@@ -26,10 +26,12 @@ const HeroList: React.FC<HeroListProps> = ({
 }) => {
   return (
     <NavList data-testid="card-list">
-      {heroes.map((hero) => (
+      {heroes.map(({ id, name, image }) => (
         <HeroCard
-          key={hero.id}
-          hero={hero}
+          key={id}
+          id={id}
+          name={name}
+          image={image}
           handleFetchHeroProfile={handleFetchHeroProfile}
         />
       ))}

@@ -41,7 +41,9 @@ const HeroName = styled.div`
 `;
 
 const HeroCard: React.FC<HeroCardProps> = ({
-  hero: { id, name, image },
+  id,
+  name,
+  image,
   handleFetchHeroProfile,
 }) => {
   const selectedHeroId = useSelector(
