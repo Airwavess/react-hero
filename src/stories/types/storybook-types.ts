@@ -8,9 +8,7 @@ export interface StoryMetadata<StoryFnReturnType> {
 
 export interface CSFStory<StoryFnReturnType> {
   (): StoryFnReturnType;
-  story?: {
-    name?: string;
-    decorators?: DecoratorFunction<StoryFnReturnType>[];
-    parameters?: { [name: string]: unknown };
-  };
+  name?: string;
+  decorators?: DecoratorFunction<StoryFnReturnType>[];
+  parameters?: { [name: string]: unknown };
 }

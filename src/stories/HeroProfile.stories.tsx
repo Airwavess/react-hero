@@ -2,6 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { MemoryRouter as Router } from "react-router-dom";
+import { object } from "@storybook/addon-knobs";
 
 import HeroProfile from "../components/HeroProfile";
 import WithFixWidthWrapper from "./styled/WithFixWidthWrapper";
@@ -25,19 +26,19 @@ const defaultPreloadState = {
 export const Default: CSFStory<JSX.Element> = () => {
   return <HeroProfile />;
 };
-Default.story = {
-  decorators: [
-    (story) => (
-      <Provider store={createStore(reducer, defaultPreloadState)}>
-        <Router initialEntries={["/heroes/1"]}>
-          <WithCenterWrapper>
-            <WithFixWidthWrapper width="80%">{story()}</WithFixWidthWrapper>
-          </WithCenterWrapper>
-        </Router>
-      </Provider>
-    ),
-  ],
-};
+Default.decorators = [
+  (story) => (
+    <Provider
+      store={createStore(reducer, object("state", defaultPreloadState))}
+    >
+      <Router initialEntries={["/heroes/1"]}>
+        <WithCenterWrapper>
+          <WithFixWidthWrapper width="80%">{story()}</WithFixWidthWrapper>
+        </WithCenterWrapper>
+      </Router>
+    </Provider>
+  ),
+];
 
 const withoutValuePreloadState = {
   heroes: heroReducerInitialState,
@@ -46,16 +47,16 @@ const withoutValuePreloadState = {
 export const WithoutValue: CSFStory<JSX.Element> = () => {
   return <HeroProfile />;
 };
-WithoutValue.story = {
-  decorators: [
-    (story) => (
-      <Provider store={createStore(reducer, withoutValuePreloadState)}>
-        <Router initialEntries={["/heroes/1"]}>
-          <WithCenterWrapper>
-            <WithFixWidthWrapper width="80%">{story()}</WithFixWidthWrapper>
-          </WithCenterWrapper>
-        </Router>
-      </Provider>
-    ),
-  ],
-};
+WithoutValue.decorators = [
+  (story) => (
+    <Provider
+      store={createStore(reducer, object("state", withoutValuePreloadState))}
+    >
+      <Router initialEntries={["/heroes/1"]}>
+        <WithCenterWrapper>
+          <WithFixWidthWrapper width="80%">{story()}</WithFixWidthWrapper>
+        </WithCenterWrapper>
+      </Router>
+    </Provider>
+  ),
+];
